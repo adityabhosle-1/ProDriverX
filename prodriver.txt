@@ -1,0 +1,55 @@
+function doGet(){
+  var string="ELLO GET REQUEST wrong way to seek data";
+      return ContentService
+    .createTextOutput(JSON.stringify(string))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+function doPost(event){
+  //{\r\n    \"sadisndi\":\"asjdasdnasd\"\r\n}
+  var string=JSON.parse(event.postData.contents);
+
+  Logger.log(string);
+  var status=myFunction(string.id)
+  var json={
+    id:string.id,
+    status:status
+  }
+  return ContentService.createTextOutput(JSON.stringify(json)); 
+}
+function myFunction(idoffile){
+var docs=DocumentApp.openById("1slmq50gdkxVwiRJPhBUN3E9aDm464Hb-9TWcBLpkqBI");
+var body=docs.getBody();
+var style = {};
+var text = body.editAsText();
+// //var body=docs.getText();
+// // var body_1=body.replace("ARYAN KUMAR","Soham Kulkarni");
+// // var body_2=body_1.replace("80","79")
+// // var body_3=body_2.replace("20102017-A","20102018-A");
+style[DocumentApp.Attribute.UNDERLINE]=false;
+text.setAttributes(style);
+var change_name="Soham Nitin Kulkarni";
+var change_mid="20102018";
+var change_rno="18";
+console.log()
+var text = body.editAsText();
+//Please check spelling from og pdf if issue happens anytime :)
+text.replaceText("Chetan Mallikarjun Kumbhar",change_name);
+text.replaceText("(20102101)",change_mid);
+text.replaceText("21",change_rno);
+var style = {};
+style[DocumentApp.Attribute.HORIZONTAL_ALIGNMENT] =
+    DocumentApp.HorizontalAlignment.RIGHT;
+style[DocumentApp.Attribute.FONT_FAMILY] = 'Ubuntu';
+style[DocumentApp.Attribute.FONT_SIZE] = 18;
+style[DocumentApp.Attribute.BOLD] = false;
+text.setAttributes(style);
+var spl_name=docs.getName().split("_")
+//spl name 7 only for mp i think not that scalable
+docs.setName(change_rno+"_"+change_mid+"_"+change_name+"_"+spl_name[3]+"_"+spl_name[4]+"_"+spl_name[7]);
+return "status:success";
+// var file = DriveApp.createFile(docblob).moveTo(change_name.toString());
+}
+function stringsplitter(){
+  var str="21_20102101_Chetan Mallikarjun Kumbhar_B_Exp-1_Eight Bit_Microprocessor"
+  console.log(str.split("_"))
+}
