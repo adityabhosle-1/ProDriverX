@@ -38,9 +38,9 @@ def main():
 
     try:
         # service = build('drive', 'v3', credentials=creds)
-        service = build('script', 'v1', credentials=creds)
+        service1= build('script', 'v1', credentials=creds)
         request = {"function": "doPost"}
-        response = service.scripts().run(scriptId="AKfycby7GD5SmWbRGCxCb30eRFThBnsKpHGlWiPd0yPhG7EsrEXzuTtj_tW8lup295Mry3F6",body=request).execute()
+        response = service1.scripts().run(scriptId="AKfycby7GD5SmWbRGCxCb30eRFThBnsKpHGlWiPd0yPhG7EsrEXzuTtj_tW8lup295Mry3F6",body=request).execute()
         print(response)
         # file_name=giveFile()
         # # Call the Drive v3 API
