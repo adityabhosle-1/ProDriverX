@@ -7,8 +7,8 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
-from httpsend import sendtoRenamer
-from readfile import giveFile,readFile
+# from httpsend import sendtoRenamer
+# from readfile import giveFile,readFile
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/script.projects','https://www.googleapis.com/auth/documents']
 script_id="1WKJ5izeaB2IUJhiAaXrrd3ERvDS_BuDZW88BtiD5qhTwXD-Rbqdw2zyN"
@@ -37,30 +37,25 @@ def main():
             token.write(creds.to_json())
 
     try:
-        # service = build('drive', 'v3', credentials=creds)
-        service1= build('script', 'v1', credentials=creds)
-        request = {"function": "doPost"}
-        response = service1.scripts().run(scriptId="AKfycby7GD5SmWbRGCxCb30eRFThBnsKpHGlWiPd0yPhG7EsrEXzuTtj_tW8lup295Mry3F6",body=request).execute()
-        print(response)
-        # file_name=giveFile()
-        # # Call the Drive v3 API
-        # file_metadata = {
-        #     'name': file_name,
-        #     'mimeType': 'application/vnd.google-apps.document'
-        # }
-        # media = MediaFileUpload('files/'+file_name,
-        #                         mimetype='application/pdf')
-        # file = service.files().create(body=file_metadata,
-        #                                     media_body=media,
-        #                                     fields='id').execute()
-        # print('File ID: {}'.format(file.get('id')))
-        # sendtoRenamer(file.get('id'))
-        # url="https://docs.google.com/document/d/"+file.get('id')
-        # print(url)
+        service = build('drive', 'v3', credentials=creds)
+        print(uploadImagetoDrive(service,"images(17).jpeg"))
+        # service1= build('script', 'v1', credentials=creds)
+        # request = {"function": "doPost"}
+        # response = service1.scripts().run(scriptId="AKfycby7GD5SmWbRGCxCb30eRFThBnsKpHGlWiPd0yPhG7EsrEXzuTtj_tW8lup295Mry3F6",body=request).execute()
+        # print(response)
+
     except HttpError as error:
         # TODO(developer) - Handle errors from drive API.
         print(f'An error occurred: {error}')
 
+def uploadImagetoDrive(service,filename):
+    file_metadata = {'name': filename}
+    media = MediaFileUpload(filename,
+                            mimetype='image/jpeg')
+    file = service.files().create(body=file_metadata,
+                                        media_body=media,
+                                        fields='id').execute()
+    return 'File ID: %s' % file.get('id')
 
 if __name__ == '__main__':
     main()
