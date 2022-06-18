@@ -14,7 +14,7 @@ SCOPES = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/au
 script_id="1WKJ5izeaB2IUJhiAaXrrd3ERvDS_BuDZW88BtiD5qhTwXD-Rbqdw2zyN"
 
 
-def main():
+def doAuth(mode,filename):
     """Shows basic usage of the Drive v3 API.
     Prints the names and ids of the first 10 files the user has access to.
     """
@@ -35,14 +35,16 @@ def main():
         # Save the credentials for the next run
         with open('token.json', 'w') as token:
             token.write(creds.to_json())
-
     try:
-        service = build('drive', 'v3', credentials=creds)
-        print(uploadImagetoDrive(service,"images(17).jpeg"))
-        # service1= build('script', 'v1', credentials=creds)
-        # request = {"function": "doPost"}
-        # response = service1.scripts().run(scriptId="AKfycby7GD5SmWbRGCxCb30eRFThBnsKpHGlWiPd0yPhG7EsrEXzuTtj_tW8lup295Mry3F6",body=request).execute()
-        # print(response)
+        if mode==1:
+            service = build('drive', 'v3', credentials=creds)
+            
+            return uploadImagetoDrive(service,filename)
+        elif mode==2:
+            service1= build('script', 'v1', credentials=creds)
+            request = {"function": "doPost"}
+            response = service1.scripts().run(scriptId="AKfycby7GD5SmWbRGCxCb30eRFThBnsKpHGlWiPd0yPhG7EsrEXzuTtj_tW8lup295Mry3F6",body=request).execute()
+            print(response)
 
     except HttpError as error:
         # TODO(developer) - Handle errors from drive API.
@@ -57,5 +59,3 @@ def uploadImagetoDrive(service,filename):
                                         fields='id').execute()
     return 'File ID: %s' % file.get('id')
 
-if __name__ == '__main__':
-    main()
