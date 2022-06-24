@@ -1,8 +1,6 @@
 import os
 from ol_predict import output_counter
 # os.system("xdotool key Alt+F10") REMOVE COMMENT BEFORE PUSHING
-print("exec is working")
-
 #cmd = raw_input("command: ")
 #spl = cmd.split(" ")
 # print(spl[1])
@@ -20,7 +18,7 @@ def getFileName():
 def Xqtr(fileName, ext):
     if ext == 'c':
         #print("This is c")
-        os.system("gcc " +fileName+ ".c")
+        os.system("gcc " +os.path.join(os.getcwd(),fileName) + ".c")
         os.system('script -c "./a.out" -q output.txt')
         noLines = output_counter()
         #print("The number of lines in the output is: ")
