@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pdx
+Version: 1.0.0
+Summary: Make PDFS easily
+Home-page: UNKNOWN
+Author: Soham And Aditya
+Author-email: MIT
+License: UNKNOWN
+Description: A command line tool which automates making pdfs and allows you to focus on programming
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux

@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Fri, 12 Aug 2022 11:55:41 +0530
+Source: pdx
+Binary: python-pdx
+Architecture: all
+Version: 1.0.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Soham And Aditya <MIT>
+Changed-By: Soham And Aditya <MIT>
+Description:
+ python-pdx - Make PDFS easily
+Changes:
+ pdx (1.0.0-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.8.5
+Checksums-Sha1:
+ 0128bd7d740eb1a8ba4c797a439e3d5df9d0d31b 6244 python-pdx_1.0.0-1_all.deb
+Checksums-Sha256:
+ 9f96192945b2c5a677791ecfd6d99e5c47be742d16079ad150333f938818f44c 6244 python-pdx_1.0.0-1_all.deb
+Files:
+ f52ecc35fc4413845ed9280f4a6fdfa5 6244 python optional python-pdx_1.0.0-1_all.deb

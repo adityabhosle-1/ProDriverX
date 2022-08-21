@@ -1,0 +1,11 @@
+Package: python-pdx
+Source: pdx
+Version: 1.0.0-1
+Architecture: all
+Maintainer: Soham And Aditya <MIT>
+Installed-Size: 36
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Section: python
+Priority: optional
+Description: Make PDFS easily
+ A command line tool which automates making pdfs and allows you to focus on programming

@@ -1,0 +1,13 @@
+Source: pdx
+Maintainer: Soham And Aditya <MIT>
+Section: python
+Priority: optional
+Build-Depends: dh-python, python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: python-pdx
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Make PDFS easily
+ A command line tool which automates making pdfs and allows you to focus on programming
+

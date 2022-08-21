@@ -1,0 +1,3 @@
+[console_scripts]
+pdx = pdx.pdx:main
+
