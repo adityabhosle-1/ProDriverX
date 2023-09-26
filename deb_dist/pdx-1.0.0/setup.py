@@ -19,5 +19,4 @@ setup(
 	entry_points={
 		'console_scripts':['pdx=pdx.pdx:main']
 	},
-	python_requries="==2.7"
 )

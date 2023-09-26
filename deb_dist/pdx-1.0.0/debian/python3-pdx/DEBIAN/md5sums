@@ -1,0 +1,14 @@
+94f27defc49b0f257bfe1ef2638697e2  usr/bin/pdx
+0482f26348ffce0d2c927af5bfd5eb2a  usr/lib/python3/dist-packages/pdx-1.0.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/pdx-1.0.0.egg-info/dependency_links.txt
+b17efe716a6b10d96e92db7e688dc991  usr/lib/python3/dist-packages/pdx-1.0.0.egg-info/entry_points.txt
+c9de95aaaa0ab9224c0188639a5059b0  usr/lib/python3/dist-packages/pdx-1.0.0.egg-info/top_level.txt
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/pdx/__init__.py
+2009217234d4166972dc6f9a22ac8877  usr/lib/python3/dist-packages/pdx/execute.py
+017362a4155dbcaf96d074cd0a01426e  usr/lib/python3/dist-packages/pdx/helper.py
+a658fd6608d5c971562b892f98b28f56  usr/lib/python3/dist-packages/pdx/ol_predict.py
+cc92db69d25b75fd66805ae1cefdf6a8  usr/lib/python3/dist-packages/pdx/pdx.py
+a4ae0a6760034e96ec2ed2b967eb28a0  usr/lib/python3/dist-packages/pdx/scr_final.py
+050d3f201fa44ede182127afa5ff5374  usr/lib/python3/dist-packages/pdx/scr_oa.py
+b97cde6eeca8ca36d6480ad40e91ebd7  usr/lib/python3/dist-packages/pdx/uploader.py
+13a3769895f32bf95b8003f2cad1a9cd  usr/share/doc/python3-pdx/changelog.Debian.gz

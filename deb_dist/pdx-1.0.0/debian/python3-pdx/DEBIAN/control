@@ -1,13 +1,11 @@
+Package: python3-pdx
 Source: pdx
+Version: 1.0.0-1
+Architecture: all
 Maintainer: Soham And Aditya <MIT>
+Installed-Size: 34
+Depends: python3:any
 Section: python
 Priority: optional
-Build-Depends: dh-python, python3-setuptools, python3-all, debhelper (>= 9)
-Standards-Version: 3.9.6
-
-Package: python3-pdx
-Architecture: all
-Depends: ${misc:Depends}, ${python3:Depends}
 Description: Make PDFS easily
  A command line tool which automates making pdfs and allows you to focus on programming
-

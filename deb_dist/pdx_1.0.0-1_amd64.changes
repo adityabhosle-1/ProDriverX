@@ -1,7 +1,7 @@
 Format: 1.8
-Date: Fri, 12 Aug 2022 11:55:41 +0530
+Date: Tue, 26 Sep 2023 09:37:29 +0530
 Source: pdx
-Binary: python-pdx
+Binary: python3-pdx
 Architecture: all
 Version: 1.0.0-1
 Distribution: unstable
@@ -9,14 +9,17 @@ Urgency: low
 Maintainer: Soham And Aditya <MIT>
 Changed-By: Soham And Aditya <MIT>
 Description:
- python-pdx - Make PDFS easily
+ python3-pdx - Make PDFS easily
 Changes:
  pdx (1.0.0-1) unstable; urgency=low
  .
-   * source package automatically created by stdeb 0.8.5
+   * source package automatically created by stdeb 0.10.0
 Checksums-Sha1:
- 0128bd7d740eb1a8ba4c797a439e3d5df9d0d31b 6244 python-pdx_1.0.0-1_all.deb
+ 0c380d2e146647edb14206baafab6b40b6ef0867 5558 pdx_1.0.0-1_amd64.buildinfo
+ e3490001c357366a2ecfead1ca6134a1bca461b9 6444 python3-pdx_1.0.0-1_all.deb
 Checksums-Sha256:
- 9f96192945b2c5a677791ecfd6d99e5c47be742d16079ad150333f938818f44c 6244 python-pdx_1.0.0-1_all.deb
+ 0ecdaf91e8dde0117af440d1d7bffb98df01af7327564a990ba4361e91efdd26 5558 pdx_1.0.0-1_amd64.buildinfo
+ cf3c913e70965b0a4a3ed3a3e0686e8426ad9c970c12a33ec8a37e7c9f32616b 6444 python3-pdx_1.0.0-1_all.deb
 Files:
- f52ecc35fc4413845ed9280f4a6fdfa5 6244 python optional python-pdx_1.0.0-1_all.deb
+ 11136807b40ac7524a29747254b42a09 5558 python optional pdx_1.0.0-1_amd64.buildinfo
+ aaca9aad46b57a04641b6572b9cd328d 6444 python optional python3-pdx_1.0.0-1_all.deb

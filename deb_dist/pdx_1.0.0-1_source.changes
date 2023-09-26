@@ -1,28 +1,28 @@
 Format: 1.8
-Date: Fri, 12 Aug 2022 11:55:41 +0530
+Date: Tue, 26 Sep 2023 09:37:29 +0530
 Source: pdx
-Binary: python-pdx
 Architecture: source
 Version: 1.0.0-1
 Distribution: unstable
 Urgency: low
 Maintainer: Soham And Aditya <MIT>
 Changed-By: Soham And Aditya <MIT>
-Description:
- python-pdx - Make PDFS easily
 Changes:
  pdx (1.0.0-1) unstable; urgency=low
  .
-   * source package automatically created by stdeb 0.8.5
+   * source package automatically created by stdeb 0.10.0
 Checksums-Sha1:
- 2cf9097d18ead1356dd2a5c3452f151e78121118 795 pdx_1.0.0-1.dsc
- cb6f66a2e4ea42fc8e9169f05e4e70e918a8bf53 5000 pdx_1.0.0.orig.tar.gz
- 14c38e10960c275b401fb6415689ca1f12f04553 896 pdx_1.0.0-1.debian.tar.xz
+ 972ce015fb93a23ba24c9b9fe5f5da636bf3e58f 775 pdx_1.0.0-1.dsc
+ 762705455f9dd00ae96a150178741b9d1b170987 5038 pdx_1.0.0.orig.tar.gz
+ 3aed740f31130c22fe3aa283e70d5b11399f1807 892 pdx_1.0.0-1.debian.tar.xz
+ 54a804ca31151bd24ee67cbf064c1d51e2a524fe 5502 pdx_1.0.0-1_source.buildinfo
 Checksums-Sha256:
- 6017becbe5ad124306df9817b101126fd06414cbd7b02c498e7b36e033cd9ee8 795 pdx_1.0.0-1.dsc
- 6d9cdfb5a91d831742ed00601040bdc0a11b0567e4c19438e045d880e705ac62 5000 pdx_1.0.0.orig.tar.gz
- 6191cc712f7ca542d9a7cbcc31dfa8fe930c42f06a4a6a6fdab9ce2e9dd05291 896 pdx_1.0.0-1.debian.tar.xz
+ e3e22eed38409a3d753748b7afa95d30a169ec75b61547789f88a04b83560338 775 pdx_1.0.0-1.dsc
+ 1a492b3aa70ff58c857a04fcb3c7807db1598960cd11d921a391302217de438d 5038 pdx_1.0.0.orig.tar.gz
+ f2fcad510c1f43f7f0515671c554df54466011bd8fd6584691341e68216dc3de 892 pdx_1.0.0-1.debian.tar.xz
+ d6af9d3b077e07c54d599889685b870d9f6f51a1e3902302247d608c26f5048f 5502 pdx_1.0.0-1_source.buildinfo
 Files:
- 72fb972b92734beba5599d8b158cf57f 795 python optional pdx_1.0.0-1.dsc
- bf16fe5699db5adba30f80c4b9c90b41 5000 python optional pdx_1.0.0.orig.tar.gz
- d6699836c65d3ddbcd37f37e864c8a96 896 python optional pdx_1.0.0-1.debian.tar.xz
+ 433f6153e5b03a900cb0a7f2d3913da9 775 python optional pdx_1.0.0-1.dsc
+ e81f390387b7900039de44344881ee5d 5038 python optional pdx_1.0.0.orig.tar.gz
+ f850da4193531ec2865e65667a4069fb 892 python optional pdx_1.0.0-1.debian.tar.xz
+ ab1d1b7820193adc76f1139f296305f7 5502 python optional pdx_1.0.0-1_source.buildinfo
