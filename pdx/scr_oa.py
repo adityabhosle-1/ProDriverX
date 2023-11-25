@@ -1,6 +1,6 @@
 import random
 import os
-from scr_final import takeSS
+from pdx.scr_final import takeSS
 def scroa(appname):
     cmd="xdotool search --class --onlyvisible '"+appname+"'"
     windowid=os.popen(cmd)

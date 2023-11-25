@@ -1,15 +1,16 @@
 import sys
 import os
 import json
+from pdx.helper import giveFileNames
+from pdx.helper import dirmake
+from pdx.helper import deletestuff
+from pdx.uploader import doDrive,doGAS
+from scr_final import beginSS
 def main():
 	cur_loc=os.getcwd()
 	if len(sys.argv) > 1:
 		if(sys.argv[1]=="--ss"):
 			if(sys.argv[2]=="make"):
-				from helper import giveFileNames
-				from helper import dirmake
-				from helper import deletestuff
-				from uploader import doDrive,doGAS
 				photoid=[]
 				if(dirmake()):
 					uName = raw_input("Name: ")
@@ -51,11 +52,6 @@ def main():
 				scroa(sys.argv[2])
 	
 		elif(sys.argv[1].find(".")!=-1):
-			from helper import giveFileNames
-			from helper import dirmake
-			from helper import deletestuff
-			from scr_final import beginSS
-			from uploader import doDrive,doGAS
 			photoid=[]
 			uName = raw_input("Name: ")
 			uMID = raw_input("Moodle ID:")

@@ -1,5 +1,5 @@
 import os
-from ol_predict import output_counter
+from pdx.ol_predict import output_counter
 
 def getFileName():
     return fileName

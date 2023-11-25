@@ -1,7 +1,7 @@
 import os
 import math
 import random
-from execute import Xqtr
+from pdx.execute import Xqtr
 
 def takeSS(filename):
     cmd = 'gnome-screenshot -w -d 5 -f ' + filename + '.png'
